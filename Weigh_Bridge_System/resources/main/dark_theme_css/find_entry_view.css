@@ -1,0 +1,173 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+#chargeLBL, #clickToSortLBL, #clickPlusLBL, #containerNumberLBL, #dateFromLBL, #dateToLBL, #dateLBL, #entryStatusLBL,
+#findEntryRecordsLBL, #grossWeightFromLBL, #grossWeightToLBL, #grossWeightLBL, #materialLBL, #netWeightFromLBL,
+#netWeightToLBL, #netWeightLBL, #orLBL, #partyLBL, #paymentModeLBL, #serialNumberFromLBL, #serialNumberToLBL,
+#serialNumberLBL, #tareWeightFromLBL, #tareWeightToLBL, #tareWeightLBL, #vehicleNumberLBL {
+    -fx-text-fill: white;
+}
+
+
+// Check-Box CSS
+#anyContainerNumberCKBOX {
+    -fx-text-fill: white;
+}
+
+
+// Text-Field CSS
+#vehicleNumberTF, #containerNumberTF {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+
+// Button CSS
+#usingLikeOperatorBTN, #findBTN, #closeTableViewBTN {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+#usingLikeOperatorBTN:hover, #findBTN:hover, #closeTableViewBTN:hover {
+    -fx-text-fill: black;
+}
+
+#usingLikeOperatorBTN:focused, #findBTN:focused, #closeTableViewBTN:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// Table-View CSS
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: black;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #4e4e4e;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: yellow;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: black;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:horizontal {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .thumb {
+    -fx-background-color: blue;
+}
+
+.table-view .show-hide-columns-button {
+    -fx-background-color: yellow;
+    -fx-border-color: white;
+}
+
+
+// Choice-Box CSS
+#partyCHBOX, #chargeCHBOX, #materialCHBOX {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-mark-color: yellow;
+    -fx-font-weight: bold;
+}
+
+#partyCHBOX .context-menu, #chargeCHBOX .context-menu, #materialCHBOX .context-menu {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+#partyCHBOX > .label, #chargeCHBOX > .label, #materialCHBOX > .label {
+    -fx-text-fill: white;
+}
+
+#partyCHBOX .menu-item > .label, #chargeCHBOX .menu-item > .label, #materialCHBOX .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+#partyCHBOX .menu-item:hover, #chargeCHBOX .menu-item:hover, #materialCHBOX .menu-item:hover {
+    -fx-background-color: yellow;
+}
+
+#partyCHBOX .menu-item:focused, #chargeCHBOX .menu-item:focused, #materialCHBOX .menu-item:focused {
+    -fx-background-color: yellow;
+}
+
+#partyCHBOX .menu-item:focused > .label,
+#chargeCHBOX .menu-item:focused > .label,
+#materialCHBOX .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+#partyCHBOX .left-container .radio,
+#chargeCHBOX .left-container .radio,
+#materialCHBOX .left-container .radio {
+    -fx-background-color: white;
+}
+
+#partyCHBOX .menu-item:focused > .left-container .radio,
+#chargeCHBOX .menu-item:focused > .left-container .radio,
+#materialCHBOX .menu-item:focused > .left-container .radio {
+    -fx-background-color: black;
+}
+
+
+// Date-Picker CSS
+.date-picker .text-field {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+// Spinner CSS
+.spinner .text-field {
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.spinner .increment-arrow-button {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 0 0;
+    -fx-border-radius: 3;
+}
+
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: white;
+}
+
+.spinner .decrement-arrow-button {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 0 1 1 0;
+    -fx-border-radius: 3;
+}
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+
+
+// Radio-Button CSS
+.radio-button {
+    -fx-text-fill: white;
+}

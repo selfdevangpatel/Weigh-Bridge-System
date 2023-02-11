@@ -1,0 +1,133 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+#generateReportLBL, #rangeLBL, #serialNumberLBL, #serialNumberFromLBL, #serialNumberToLBL, #dateLBL, #dateFromLBL,
+#dateToLBL, #filterLBL, #vehicleNumberLBL, #paymentModeLBL, #entryStatusLBL, #partyLBL, #orLBL, #formatLBL, #exportLBL {
+    -fx-text-fill: white;
+}
+
+
+// Check-Box CSS
+#anyVehicleNumberCKBOX {
+    -fx-text-fill: white;
+}
+
+// Text-Field CSS
+#vehicleNumberTF, #exportLocationTF {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+
+// Button CSS
+#generateBTN, #printBTN, #browseBTN, #exportBTN {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+#generateBTN:hover, #printBTN:hover, #browseBTN:hover, #exportBTN:hover {
+    -fx-text-fill: black;
+}
+
+#generateBTN:focused, #printBTN:focused, #browseBTN:focused, #exportBTN:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// Choice-Box CSS
+#partyCHBOX, #paymentModeCHBOX, #reportFormatCHBOX {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-mark-color: yellow;
+    -fx-font-weight: bold;
+}
+
+#partyCHBOX .context-menu, #paymentModeCHBOX .context-menu, #reportFormatCHBOX .context-menu {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+#partyCHBOX > .label, #paymentModeCHBOX > .label, #reportFormatCHBOX > .label {
+    -fx-text-fill: white;
+}
+
+#partyCHBOX .menu-item > .label, #paymentModeCHBOX .menu-item > .label, #reportFormatCHBOX .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+#partyCHBOX .menu-item:hover, #paymentModeCHBOX .menu-item:hover, #reportFormatCHBOX .menu-item:hover {
+    -fx-background-color: yellow;
+}
+
+#partyCHBOX .menu-item:focused, #paymentModeCHBOX .menu-item:focused, #reportFormatCHBOX .menu-item:focused {
+    -fx-background-color: yellow;
+}
+
+#partyCHBOX .menu-item:focused > .label,
+#paymentModeCHBOX .menu-item:focused > .label,
+#reportFormatCHBOX .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+#partyCHBOX .left-container .radio,
+#paymentModeCHBOX .left-container .radio,
+#reportFormatCHBOX .left-container .radio {
+    -fx-background-color: white;
+}
+
+#partyCHBOX .menu-item:focused > .left-container .radio,
+#paymentModeCHBOX .menu-item:focused > .left-container .radio,
+#reportFormatCHBOX .menu-item:focused > .left-container .radio {
+    -fx-background-color: black;
+}
+
+
+// Date-Picker CSS
+.date-picker .text-field {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+// Spinner CSS
+.spinner .text-field {
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.spinner .increment-arrow-button {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 0 0;
+    -fx-border-radius: 3;
+}
+
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: white;
+}
+
+.spinner .decrement-arrow-button {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 0 1 1 0;
+    -fx-border-radius: 3;
+}
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+
+
+// Radio-Button CSS
+.radio-button {
+    -fx-text-fill: white;
+}

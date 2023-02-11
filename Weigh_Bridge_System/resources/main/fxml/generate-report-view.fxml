@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.ReportController">
+   <children>
+      <Label fx:id="generateReportLBL" layoutX="50.0" layoutY="30.0" text="Generate Report" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rangeLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="85.0" prefWidth="110.0" text="Range :" underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="serialNumberLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="120.0" prefWidth="110.0" text="Serial No.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="serialNumberFromLBL" layoutX="180.0" layoutY="120.0" text="From">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="serialNumberFromSP" editable="true" layoutX="230.0" layoutY="120.0" prefWidth="150.0" />
+      <Label fx:id="serialNumberToLBL" layoutX="410.0" layoutY="120.0" text="To">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="serialNumberToSP" editable="true" layoutX="440.0" layoutY="120.0" prefWidth="150.0" />
+      <Label fx:id="dateLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="165.0" prefWidth="110.0" text="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateFromLBL" layoutX="180.0" layoutY="165.0" text="From">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateFromDP" editable="false" layoutX="230.0" layoutY="163.0" prefWidth="150.0" />
+      <Label fx:id="dateToLBL" layoutX="410.0" layoutY="165.0" text="To">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateToDP" editable="false" layoutX="440.0" layoutY="163.0" prefWidth="150.0" />
+      <Label fx:id="filterLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="215.0" prefWidth="110.0" text="Filter :" underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="vehicleNumberLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="250.0" prefWidth="110.0" text="Vehicle No.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="anyVehicleNumberCKBOX" layoutX="180.0" layoutY="250.0" mnemonicParsing="false" selected="true" text="Any">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="orLBL" layoutX="240.0" layoutY="250.0" text="-- OR --" />
+      <TextField fx:id="vehicleNumberTF" disable="true" layoutX="295.0" layoutY="244.0" prefWidth="150.0" promptText="Vehicle No.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="paymentModeLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="295.0" prefWidth="110.0" text="Payment Mode">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="anyPaymentModeRB" layoutX="180.0" layoutY="295.0" mnemonicParsing="false" selected="true" text="Any">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="paymentModeTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="selectedPaymentModeRB" layoutX="255.0" layoutY="295.0" mnemonicParsing="false" text="Selected" toggleGroup="$paymentModeTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="paymentModeCHBOX" disable="true" layoutX="350.0" layoutY="293.0" />
+      <Label fx:id="entryStatusLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="340.0" prefWidth="110.0" text="Entry status">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="anyEntryStatusRB" layoutX="180.0" layoutY="340.0" mnemonicParsing="false" selected="true" text="Any">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="entryStatusTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="completeEntryStatusRB" layoutX="255.0" layoutY="340.0" mnemonicParsing="false" text="Complete" toggleGroup="$entryStatusTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="incompleteEntryStatusRB" layoutX="365.0" layoutY="340.0" mnemonicParsing="false" text="Incomplete" toggleGroup="$entryStatusTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="partyLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="385.0" prefWidth="110.0" text="Party">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="anyPartyRB" layoutX="180.0" layoutY="385.0" mnemonicParsing="false" selected="true" text="Any">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="partyTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="nonePartyRB" layoutX="255.0" layoutY="385.0" mnemonicParsing="false" text="None" toggleGroup="$partyTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="selectedPartyRB" layoutX="425.0" layoutY="385.0" mnemonicParsing="false" text="Selected" toggleGroup="$partyTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="onlyPartyRB" layoutX="340.0" layoutY="385.0" mnemonicParsing="false" text="Only" toggleGroup="$partyTG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="partyCHBOX" disable="true" layoutX="520.0" layoutY="383.0" />
+      <Label fx:id="formatLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="430.0" prefWidth="110.0" text="Format">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="reportFormatCHBOX" layoutX="180.0" layoutY="428.0" prefWidth="510.0" />
+      <Button fx:id="generateBTN" layoutX="180.0" layoutY="500.0" mnemonicParsing="false" onAction="#onGenerateBTNAction" text="Generate">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="printBTN" disable="true" layoutX="300.0" layoutY="500.0" mnemonicParsing="false" onAction="#onPrintBTNAction" text="Print">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="reportGeneratedLBL" layoutX="360.0" layoutY="505.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="exportLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="570.0" prefWidth="110.0" text="Export :" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="exportLocationTF" layoutX="180.0" layoutY="568.0" prefWidth="300.0" />
+      <Button fx:id="browseBTN" layoutX="490.0" layoutY="568.0" mnemonicParsing="false" onAction="#onBrowseBTNAction" text="Browse" />
+      <RadioButton fx:id="pdfRB" layoutX="180.0" layoutY="605.0" mnemonicParsing="false" selected="true" text="PDF">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="exportFormatTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="msExcelRB" layoutX="250.0" layoutY="605.0" mnemonicParsing="false" text="MS Excel" toggleGroup="$exportFormatTG">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="exportBTN" disable="true" layoutX="180.0" layoutY="640.0" mnemonicParsing="false" onAction="#onExportBTNAction" text="Export" />
+      <Label fx:id="exportStatusLBL" layoutX="245.0" layoutY="643.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

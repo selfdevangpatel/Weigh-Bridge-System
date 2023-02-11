@@ -1,0 +1,80 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+#partyTableLBL, #selectLBL1, #selectLBL2 {
+    -fx-text-fill: white;
+}
+
+
+// Text-Field CSS
+.text-field {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+// Text-Area CSS
+.text-area {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-area .content {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+
+// Button CSS
+.button {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-text-fill: black;
+}
+
+.button:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// Table-View CSS
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: black;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #4e4e4e;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: yellow;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: black;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:horizontal {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .thumb,
+.table-view > .virtual-flow > .scroll-bar > .thumb {
+    -fx-background-color: blue;
+}

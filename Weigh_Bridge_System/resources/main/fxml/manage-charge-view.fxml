@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="160.0" layoutY="25.0" text="Charge List :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="chargeTF" layoutX="50.0" layoutY="50.0" prefWidth="80.0" promptText="Charge" />
+      <Button fx:id="addChargeBTN" layoutX="50.0" layoutY="85.0" mnemonicParsing="false" text="Add -&gt;" />
+      <ListView fx:id="chargeLV" layoutX="160.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" />
+      <Label layoutX="275.0" layoutY="50.0" text="Select an item from the">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="70.0" text="list to remove.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeChargeBTN" layoutX="275.0" layoutY="95.0" mnemonicParsing="false" text="Remove" />
+   </children>
+</AnchorPane>

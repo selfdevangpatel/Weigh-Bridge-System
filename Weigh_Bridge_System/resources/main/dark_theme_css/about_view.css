@@ -1,0 +1,10 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+.label {
+    -fx-text-fill: white;
+}

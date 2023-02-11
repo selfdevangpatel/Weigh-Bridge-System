@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FindEntryController">
+   <children>
+      <Label fx:id="findEntryRecordsLBL" layoutX="50.0" layoutY="50.0" text="Find entry record(s)" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="serialNumberLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="100.0" prefWidth="125.0" text="Serial No.">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="serialNumberFromLBL" layoutX="230.0" layoutY="100.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="serialNumberFromSP" editable="true" layoutX="280.0" layoutY="100.0" prefWidth="150.0" />
+      <Label fx:id="serialNumberToLBL" layoutX="470.0" layoutY="100.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="serialNumberToSP" editable="true" layoutX="500.0" layoutY="100.0" prefWidth="150.0" />
+      <Label fx:id="dateLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="125.0" text="Date">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="dateCKBOX" layoutX="185.0" layoutY="153.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="dateFromLBL" layoutX="230.0" layoutY="150.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateFromDP" disable="true" editable="false" layoutX="280.0" layoutY="150.0" prefWidth="150.0" />
+      <Label fx:id="dateToLBL" layoutX="470.0" layoutY="150.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateToDP" disable="true" editable="false" layoutX="500.0" layoutY="150.0" prefWidth="150.0" />
+      <Label fx:id="partyLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="200.0" prefWidth="125.0" text="Party">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="partyCKBOX" layoutX="185.0" layoutY="203.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="nonePartyRB" disable="true" layoutX="230.0" layoutY="203.0" mnemonicParsing="false" selected="true" text="None">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="partyTypeTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="onlyPartyRB" disable="true" layoutX="315.0" layoutY="203.0" mnemonicParsing="false" text="Only" toggleGroup="$partyTypeTG">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="selectedPartyRB" disable="true" layoutX="400.0" layoutY="203.0" mnemonicParsing="false" text="Selected" toggleGroup="$partyTypeTG">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="partyCHBOX" disable="true" layoutX="495.0" layoutY="200.0" />
+      <Label fx:id="vehicleNumberLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="250.0" prefWidth="125.0" text="Vehicle No.">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="vehicleNumberCKBOX" layoutX="185.0" layoutY="253.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="vehicleNumberTF" disable="true" layoutX="230.0" layoutY="250.0" prefWidth="260.0" promptText="Vehicle No.     -OR-     LIKE Operator">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="usingLikeOperatorBTN" disable="true" layoutX="500.0" layoutY="252.0" mnemonicParsing="false" onAction="#usingLikeOperatorBTNAction" text="How to use 'LIKE' Operator?" />
+      <Label fx:id="chargeLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="300.0" prefWidth="125.0" text="Charge">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chargeCKBOX" layoutX="185.0" layoutY="303.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <ChoiceBox fx:id="chargeCHBOX" disable="true" layoutX="230.0" layoutY="300.0" />
+      <Label fx:id="materialLBL" layoutX="390.0" layoutY="300.0" text="Material">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="materialCKBOX" layoutX="470.0" layoutY="303.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <ChoiceBox fx:id="materialCHBOX" disable="true" layoutX="500.0" layoutY="300.0" />
+      <Label fx:id="paymentModeLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="355.0" prefWidth="125.0" text="Payment Mode">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="paymentModeCKBOX" layoutX="185.0" layoutY="358.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="paymentModeCashRB" disable="true" layoutX="230.0" layoutY="358.0" mnemonicParsing="false" selected="true" text="Cash">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="paymentModeTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="paymentModeCreditRB" disable="true" layoutX="310.0" layoutY="358.0" mnemonicParsing="false" text="Credit" toggleGroup="$paymentModeTG">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="paymentModeUPIRB" disable="true" layoutX="398.0" layoutY="358.0" mnemonicParsing="false" text="UPI" toggleGroup="$paymentModeTG">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="containerNumberLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="405.0" prefWidth="125.0" text="Container No.">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="containerNumberCKBOX" layoutX="185.0" layoutY="408.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="anyContainerNumberCKBOX" disable="true" layoutX="230.0" layoutY="408.0" mnemonicParsing="false" selected="true" text="Any">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="orLBL" layoutX="290.0" layoutY="410.0" text="-- OR --" />
+      <TextField fx:id="containerNumberTF" disable="true" layoutX="355.0" layoutY="405.0" prefWidth="150.0" promptText="Container No.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="entryStatusLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="455.0" prefWidth="125.0" text="Entry Status">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="entryStatusCKBOX" layoutX="185.0" layoutY="458.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="entryStatusCompleteRB" disable="true" layoutX="230.0" layoutY="458.0" mnemonicParsing="false" selected="true" text="Complete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="entryStatusTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="entryStatusIncompleteRB" disable="true" layoutX="345.0" layoutY="458.0" mnemonicParsing="false" text="Incomplete" toggleGroup="$entryStatusTG">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="grossWeightLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="505.0" prefWidth="125.0" text="Gross Weight">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="grossWeightCKBOX" layoutX="185.0" layoutY="508.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="grossWeightFromLBL" layoutX="230.0" layoutY="505.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="grossWeightFromSP" disable="true" editable="true" layoutX="280.0" layoutY="505.0" prefWidth="150.0" />
+      <Label fx:id="grossWeightToLBL" layoutX="470.0" layoutY="505.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="grossWeightToSP" disable="true" editable="true" layoutX="500.0" layoutY="505.0" prefWidth="150.0" />
+      <Label fx:id="tareWeightLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="555.0" prefWidth="125.0" text="Tare Weight">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="tareWeightCKBOX" layoutX="185.0" layoutY="558.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="tareWeightFromLBL" layoutX="230.0" layoutY="555.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="tareWeightFromSP" disable="true" editable="true" layoutX="280.0" layoutY="555.0" prefWidth="150.0" />
+      <Label fx:id="tareWeightToLBL" layoutX="470.0" layoutY="555.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="tareWeightToSP" disable="true" editable="true" layoutX="500.0" layoutY="555.0" prefWidth="150.0" />
+      <Label fx:id="netWeightLBL" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="605.0" prefWidth="125.0" text="Net Weight">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="netWeightCKBOX" layoutX="185.0" layoutY="608.0" mnemonicParsing="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="netWeightFromLBL" layoutX="230.0" layoutY="605.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="netWeightFromSP" disable="true" editable="true" layoutX="280.0" layoutY="605.0" prefWidth="150.0" />
+      <Label fx:id="netWeightToLBL" layoutX="470.0" layoutY="605.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="netWeightToSP" disable="true" editable="true" layoutX="500.0" layoutY="605.0" prefWidth="150.0" />
+      <Button fx:id="findBTN" layoutX="230.0" layoutY="660.0" mnemonicParsing="false" onAction="#findBTNAction" text="Find">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewTV" disable="true" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="serialNumberTCOL" editable="false" maxWidth="-1.0" minWidth="70.0" prefWidth="-1.0" text="Serial No." />
+            <TableColumn fx:id="vehicleNumberTCOL" editable="false" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Vehicle No." />
+            <TableColumn fx:id="tareWeightTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Tare Weight" />
+            <TableColumn fx:id="tareDateTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Tare Date" />
+            <TableColumn fx:id="tareTimeTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Tare Time" />
+            <TableColumn fx:id="tareManualTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Tare Manual" />
+            <TableColumn fx:id="grossWeightTCOL" editable="false" maxWidth="-1.0" minWidth="85.0" prefWidth="-1.0" text="Gross Weight" />
+            <TableColumn fx:id="grossDateTCOL" editable="false" maxWidth="-1.0" minWidth="85.0" prefWidth="-1.0" text="Gross Date" />
+            <TableColumn fx:id="grossTimeTCOL" editable="false" maxWidth="-1.0" minWidth="85.0" prefWidth="-1.0" text="Gross Time" />
+            <TableColumn fx:id="grossManualTCOL" editable="false" maxWidth="-1.0" minWidth="85.0" prefWidth="-1.0" text="Gross Manual" />
+            <TableColumn fx:id="netWeightTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Net Weight" />
+          <TableColumn fx:id="chargeTCOL" editable="false" maxWidth="-1.0" minWidth="55.0" prefWidth="-1.0" text="Charge" />
+            <TableColumn fx:id="partyTCOL" editable="false" maxWidth="-1.0" minWidth="180.0" prefWidth="-1.0" text="Party" />
+            <TableColumn fx:id="containerNumberTCOL" editable="false" maxWidth="-1.0" minWidth="130.0" prefWidth="-1.0" text="Container No." />
+            <TableColumn fx:id="paymentModeTCOL" editable="false" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Payment Mode" />
+            <TableColumn fx:id="materialTCOL" editable="false" maxWidth="-1.0" minWidth="85.0" prefWidth="-1.0" text="Material" />
+            <TableColumn fx:id="entryDateTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Entry Date" />
+            <TableColumn fx:id="entryTimeTCOL" editable="false" maxWidth="-1.0" minWidth="80.0" prefWidth="-1.0" text="Entry Time" />
+            <TableColumn fx:id="insertOperatorTCOL" editable="false" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Insert Operator" />
+            <TableColumn fx:id="updateOperatorTCOL" editable="false" maxWidth="-1.0" minWidth="135.0" prefWidth="-1.0" text="Update Operator     " />
+        </columns>
+      </TableView>
+      <Label fx:id="clickToSortLBL" layoutY="20.0" text="Click on column header to sort records." visible="false" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="clickPlusLBL" layoutY="20.0" text="Click on '+' to show/hide column." visible="false" AnchorPane.leftAnchor="320.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeTableViewBTN" disable="true" layoutY="15.0" mnemonicParsing="false" onAction="#closeTableViewBTNAction" text="Close Table View" visible="false" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>

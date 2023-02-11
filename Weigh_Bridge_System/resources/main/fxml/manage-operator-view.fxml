@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="operatorTableLBL" layoutX="270.0" layoutY="25.0" text="Operator table :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="operatorNameTF" layoutX="50.0" layoutY="50.0" prefWidth="200.0" promptText="Operator name" />
+      <TextField fx:id="contactNumberTF" layoutX="50.0" layoutY="85.0" prefWidth="200.0" promptText="Contact number (Optional)" />
+      <TextField fx:id="emailAddressTF" layoutX="50.0" layoutY="120.0" prefWidth="200.0" promptText="Email address (Optional)" />
+      <TextArea fx:id="addressTA" layoutX="50.0" layoutY="155.0" prefHeight="60.0" prefWidth="200.0" promptText="Address (Optional)" />
+      <Button fx:id="addOperatorBTN" layoutX="50.0" layoutY="225.0" mnemonicParsing="false" text="Add -&gt;" />
+      <Label fx:id="selectLBL1" layoutX="50.0" layoutY="300.0" text="Select an item from the table to">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectLBL2" layoutX="50.0" layoutY="320.0" text="remove.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeOperatorBTN" layoutX="50.0" layoutY="345.0" mnemonicParsing="false" text="Remove" />
+      <TableView fx:id="operatorTV" prefHeight="320.0" prefWidth="500.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="operatorNameTCOL" editable="false" maxWidth="-1.0" minWidth="150.0" prefWidth="-1.0" text="Operator Name" />
+          <TableColumn fx:id="contactNumberTCOL" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="Contact Number" />
+            <TableColumn fx:id="emailAddressTCOL" maxWidth="-1.0" minWidth="200.0" prefWidth="-1.0" text="Email Address" />
+            <TableColumn fx:id="addressTCOL" maxWidth="-1.0" minWidth="200.0" prefWidth="-1.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

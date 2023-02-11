@@ -1,0 +1,59 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+.label {
+    -fx-text-fill: white;
+}
+
+
+// Text-Field CSS
+.text-field {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+// Button CSS
+.button {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-text-fill: black;
+}
+
+.button:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// List-Cell CSS
+.list-cell:odd {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.list-cell:even {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.list-cell:selected {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.list-cell:hover {
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+}

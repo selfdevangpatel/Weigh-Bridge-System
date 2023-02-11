@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="vehicleAlertTableLBL" layoutX="270.0" layoutY="25.0" text="Vehicle alert table :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="vehicleNumberTF" layoutX="50.0" layoutY="50.0" prefWidth="200.0" promptText="Vehicle number" />
+      <TextArea fx:id="noteTA" layoutX="50.0" layoutY="85.0" prefHeight="60.0" prefWidth="200.0" promptText="Note (Optional)" />
+      <Button fx:id="addVehicleBTN" layoutX="50.0" layoutY="160.0" mnemonicParsing="false" text="Add -&gt;" />
+      <Label fx:id="selectLBL1" layoutX="50.0" layoutY="270.0" text="Select an item from the table to">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectLBL2" layoutX="50.0" layoutY="290.0" text="remove.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeVehicleBTN" layoutX="47.0" layoutY="315.0" mnemonicParsing="false" text="Remove" />
+      <TableView fx:id="vehicleAlertTV" prefHeight="320.0" prefWidth="500.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="vehicleNumberTCOL" editable="false" maxWidth="-1.0" minWidth="185.0" prefWidth="-1.0" text="Vehicle Number" />
+          <TableColumn fx:id="noteTCOL" maxWidth="-1.0" minWidth="300.0" prefWidth="-1.0" text="Note" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

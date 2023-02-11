@@ -1,0 +1,122 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Button CSS
+.button {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-text-fill: black;
+}
+
+.button:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// Label CSS
+.label {
+    -fx-text-fill: white;
+}
+
+
+// Choice-Box CSS
+.choice-box {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-mark-color: yellow;
+    -fx-font-weight: bold;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+.choice-box > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:hover {
+    -fx-background-color: yellow;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: yellow;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+.choice-box .left-container .radio {
+    -fx-background-color: white;
+}
+
+.choice-box .menu-item:focused > .left-container .radio {
+    -fx-background-color: black;
+}
+
+
+// Combo-Box CSS
+.combo-box {
+    -fx-mark-color: yellow;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.combo-box .text-field {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: green;
+}
+
+
+// Menu Bar CSS
+.menu-bar {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu .label {
+    -fx-text-fill: white;
+}
+
+.menu .menu-item {
+    -fx-background-color: black;
+}
+
+.menu .menu-item:hover {
+    -fx-background-color: yellow;
+}
+
+.menu .menu-item:hover .label {
+    -fx-text-fill: black;
+}

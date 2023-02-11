@@ -1,0 +1,102 @@
+// Anchor Pane CSS
+#anchorPane {
+    -fx-background-color: black;
+}
+
+
+// Label CSS
+#categoryLBL, #dateRangeLBL, #dateFromLBL, #dateToLBL, #yearLBL {
+    -fx-text-fill: white;
+}
+
+
+// XY-Chart CSS
+.axis {
+    -fx-tick-label-fill: white;
+}
+
+.axis-label {
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+}
+
+.chart-plot-background {
+    -fx-background-color: black;
+}
+
+
+// Pie-Chart CSS
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.chart-pie-label-line {
+    -fx-stroke-width: 2;
+}
+
+
+// Button CSS
+#plotChartBTN {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+#plotChartBTN:hover {
+    -fx-text-fill: black;
+}
+
+#plotChartBTN:focused {
+    -fx-border-color: white;
+    -fx-text-fill: black;
+}
+
+
+// Choice-Box CSS
+.choice-box {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-mark-color: yellow;
+    -fx-font-weight: bold;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+.choice-box > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:hover {
+    -fx-background-color: yellow;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: yellow;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+.choice-box .left-container .radio {
+    -fx-background-color: white;
+}
+
+.choice-box .menu-item:focused > .left-container .radio {
+    -fx-background-color: black;
+}
+
+
+// Date-Picker CSS
+.date-picker .text-field {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
