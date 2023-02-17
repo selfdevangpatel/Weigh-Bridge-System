@@ -158,7 +158,7 @@ public class ReportQuery {
 
                                 tareDate = resultSet.getDate(5);
                                 grossDate = resultSet.getDate(7);
-                                partyName = resultSet.getString(9);
+                                partyName = resultSet.getString(10);
 
                                 partyEntryList.add(new String[]{String.valueOf(resultSet.getInt(1)),
                                                                 resultSet.getString(2),
@@ -170,13 +170,14 @@ public class ReportQuery {
                                                                 grossDate == null ? "" : DateTime.
                                                                                          dateToString(grossDate),
                                                                 String.valueOf(resultSet.getInt(8)),
+                                                                resultSet.getString(9),
                                                                 partyName == null ? "" : partyName});
                             }
                         }
 
                         statement.close();
 
-                        return partyEntryList.stream().collect(Collectors.groupingBy(strings -> strings[8]));
+                        return partyEntryList.stream().collect(Collectors.groupingBy(strings -> strings[9]));
                     }
                     case 4 -> {
 
@@ -501,7 +502,7 @@ public class ReportQuery {
 
                                 tareDate = resultSet.getDate(4);
                                 grossDate = resultSet.getDate(6);
-                                partyName = resultSet.getString(8);
+                                partyName = resultSet.getString(9);
 
                                 partyEntryList.add(new String[]{String.valueOf(resultSet.getInt(1)),
                                                                 String.valueOf(resultSet.getInt(2)),
@@ -512,13 +513,14 @@ public class ReportQuery {
                                                                 grossDate == null ? "" : DateTime.
                                                                                          dateToString(grossDate),
                                                                 String.valueOf(resultSet.getInt(7)),
+                                                                resultSet.getString(8),
                                                                 partyName == null ? "" : partyName});
                             }
                         }
 
                         statement.close();
 
-                        return partyEntryList.stream().collect(Collectors.groupingBy(strings -> strings[7]));
+                        return partyEntryList.stream().collect(Collectors.groupingBy(strings -> strings[8]));
                     }
                     case 4 -> {
 
